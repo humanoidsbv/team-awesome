@@ -17,4 +17,4 @@ about: Template for job stories
 - 
 
 ## Bonus 🏆
-- 
+- [ ]
