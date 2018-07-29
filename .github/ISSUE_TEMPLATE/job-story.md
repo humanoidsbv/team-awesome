@@ -10,6 +10,9 @@ about: Template for job stories
 ## Prerequisites 🎒
 - 
 
+## Resources 📎
+- 
+
 ## References 📚
 - 
 
