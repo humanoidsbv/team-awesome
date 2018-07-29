@@ -4,17 +4,17 @@ about: Template for job stories
 
 ---
 
-## Objectives
+## Objectives 🎯
+- [ ] 
+
+## Prerequisites 🎒
 - 
 
-## Prerequisites
+## References 📚
 - 
 
-## Resources
+## Tips 💡
 - 
 
-## References
+## Bonus 🏆
 - 
-
-## Tips
--
