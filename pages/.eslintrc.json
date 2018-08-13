@@ -1,5 +1,5 @@
 {
-  "extends": "../.eslintrc",
+  "extends": "../.eslintrc.json",
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   }
