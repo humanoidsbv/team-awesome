@@ -1,6 +1,3 @@
-export default () =>
-<div>
-  <ul>
-    <li>Welcome to Team Awesome!</li>
-  </ul>
-</div>;
+import React from 'react';
+
+export default () => <h1>Welcome to Team Awesome! </h1>;
