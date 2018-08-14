@@ -22,7 +22,7 @@ $site-header-height: 50px;
     font-size: 26px;
   }
 
-  &__nav-button {
+  &__navigation-button {
     background: url('/static/icons/hamburger.svg') center center no-repeat;
     height: $site-header-height;
     position: absolute;
@@ -31,7 +31,7 @@ $site-header-height: 50px;
     width: $site-header-height;
   }
 
-  &__nav-button-label {
+  &__navigation-button-label {
     display: none;
   }
 
