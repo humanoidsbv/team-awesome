@@ -1,7 +1,13 @@
 import React from 'react';
 
+import DefaultPage from '../components/default-page';
+
 import '../shared/styles/_default.scss';
 import '../shared/styles/_fonts.scss';
 import '../shared/styles/_reset.scss';
 
-export default () => <h1>Welcome to Team Awesome! </h1>;
+export default () => (
+  <DefaultPage>
+    <h1>Welcome to Team Awesome! </h1>
+  </DefaultPage>
+);

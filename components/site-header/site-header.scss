@@ -1,0 +1,42 @@
+$site-header-height: 50px;
+
+.site-header {
+  background-color: #4f88ef;
+  color: #ffffff;
+  height: $site-header-height;
+  left: 0;
+  overflow: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  &__mobile {
+    align-items: center;
+    display: flex;
+    height: $site-header-height;
+    justify-content: center;
+  }
+
+  &__title {
+    font-family: bello-script;
+    font-size: 26px;
+  }
+
+  &__nav-button {
+    background: url('/static/icons/hamburger.svg') center center no-repeat;
+    height: $site-header-height;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: $site-header-height;
+  }
+
+  &__nav-button-label {
+    display: none;
+  }
+
+  &--open {
+    bottom: 0;
+    height: auto;
+  }
+}

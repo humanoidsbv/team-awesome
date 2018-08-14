@@ -7,6 +7,7 @@ export default class MyDocument extends Document {
       <html lang="en">
         <Head>
           <title>Team Awesome!</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="stylesheet" href="/_next/static/style.css" />
         </Head>
         <body>
