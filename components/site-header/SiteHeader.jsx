@@ -27,7 +27,10 @@ class SiteHeader extends React.Component {
           <span className="site-header__title">team awesome</span>
           <button
             type="button"
-            className="site-header__navigation-button"
+            className={`
+              site-header__navigation-button
+              site-header__navigation-button--${isMenuVisible ? 'open' : 'closed'}
+            `}
             onClick={this.handleNavButtonClick}
           >
             <span className="site-header__navigation-button-label">Toggle Navigation</span>

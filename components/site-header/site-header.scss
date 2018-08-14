@@ -5,7 +5,7 @@ $site-header-height: 50px;
   color: #ffffff;
   height: $site-header-height;
   left: 0;
-  overflow: none;
+  overflow: hidden;
   position: fixed;
   right: 0;
   top: 0;
@@ -38,5 +38,9 @@ $site-header-height: 50px;
   &--open {
     bottom: 0;
     height: auto;
+
+    .site-header__navigation-button--open {
+      background-image: url('/static/icons/close.svg');
+    }
   }
 }
