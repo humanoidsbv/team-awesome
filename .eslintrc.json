@@ -10,7 +10,6 @@
   "rules": {
     "arrow-parens": ["error", "always"],
     "comma-dangle": ["error", "never"],
-    "import/no-extraneous-dependencies": "off",
     "react/jsx-one-expression-per-line": "off"
   }
 }
