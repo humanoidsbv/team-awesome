@@ -9,6 +9,7 @@ $site-header-height: 50px;
   position: fixed;
   right: 0;
   top: 0;
+  transition: height .3s;
 
   &__mobile {
     align-items: center;
@@ -36,8 +37,7 @@ $site-header-height: 50px;
   }
 
   &--open {
-    bottom: 0;
-    height: auto;
+    height: 100%;
 
     .site-header__navigation-button--open {
       background-image: url('/static/icons/close.svg');

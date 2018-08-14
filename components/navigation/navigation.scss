@@ -10,8 +10,13 @@
     height: 30px;
     line-height: 30px;
     margin-top: 40px;
+    transition: background-color .3s;
 
-    &--active {
+    &--active,
+    &:hover,
+    &:active,
+    &:focus,
+    &:focus-within {
       background-color: #1166a5;
       border-radius: 4px;
     }
