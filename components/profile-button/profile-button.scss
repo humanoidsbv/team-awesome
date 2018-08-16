@@ -3,7 +3,37 @@
 .profile-button {
   display: none;
 
-  @include tablet {
+  &::after {
+    content: '';
     display: block;
+    width: 25px;
+    height: 25px;
+    background: url(/static/icons/arrow-down.svg) center center no-repeat;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__badge {
+    background-color: white;
+    border-radius: 36px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 10px;
+    width: 75px;
+    margin: 0 12px;
+  }
+
+  &__photo {
+    height: 32px;
+    width: 32px;
+    margin: 2px;
+    border-radius: 32px;
   }
 }
