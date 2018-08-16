@@ -1,4 +1,7 @@
+@import "../../shared/styles/mixins";
+
 $site-header-height: 50px;
+$site-header-height-desktop: 70px;
 
 .site-header {
   background-color: #4f88ef;
@@ -10,17 +13,27 @@ $site-header-height: 50px;
   right: 0;
   top: 0;
   transition: height .3s;
+  display: block;
+  height: $site-header-height;
 
-  &__mobile {
-    align-items: center;
+  @include desktop {
     display: flex;
-    height: $site-header-height;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: $site-header-height-desktop;
+    padding: 0 21px 0 12px;
   }
 
   &__title {
     font-family: bello-script;
     font-size: 26px;
+    height: $site-header-height;
+    line-height: $site-header-height;
+    text-align: center;
+
+    @include desktop {
+      display: none;
+    }
   }
 
   &__navigation-button {
@@ -30,6 +43,10 @@ $site-header-height: 50px;
     right: 0;
     top: 0;
     width: $site-header-height;
+
+    @include desktop {
+      display: none;
+    }
   }
 
   &__navigation-button-label {
@@ -38,6 +55,10 @@ $site-header-height: 50px;
 
   &--open {
     height: 100%;
+
+    @include desktop {
+      height: $site-header-height-desktop;
+    }
 
     .site-header__navigation-button--open {
       background-image: url('/static/icons/close.svg');
