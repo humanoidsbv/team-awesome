@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint --ext js,jsx .",
-    "api": "json-server --watch db.json"
+    "api": "json-server --watch api/db.json"
   },
   "repository": {
     "type": "git",
