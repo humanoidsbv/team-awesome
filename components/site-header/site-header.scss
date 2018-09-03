@@ -6,6 +6,8 @@ $site-header-height-desktop: 70px;
 .site-header {
   background-color: #4f88ef;
   color: #ffffff;
+  display: block;
+  height: $site-header-height;
   height: $site-header-height;
   left: 0;
   overflow: hidden;
@@ -13,14 +15,12 @@ $site-header-height-desktop: 70px;
   right: 0;
   top: 0;
   transition: height .3s;
-  display: block;
-  height: $site-header-height;
 
   @include desktop {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
+    display: flex;
     height: $site-header-height-desktop;
+    justify-content: space-between;
     padding: 0 21px 0 12px;
   }
 

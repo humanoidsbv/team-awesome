@@ -4,36 +4,36 @@
   display: none;
 
   &::after {
+    background: url(/static/icons/arrow-down.svg) center center no-repeat;
     content: '';
     display: block;
-    width: 25px;
     height: 25px;
-    background: url(/static/icons/arrow-down.svg) center center no-repeat;
+    width: 25px;
   }
 
   @include desktop {
-    display: flex;
     align-items: center;
     cursor: pointer;
+    display: flex;
   }
 
   &__badge {
+    align-items: center;
     background-color: white;
     border-radius: 36px;
     display: flex;
-    align-items: center;
   }
 
   &__logo {
     height: 10px;
-    width: 75px;
     margin: 0 12px;
+    width: 75px;
   }
 
   &__photo {
-    height: 32px;
-    width: 32px;
-    margin: 2px;
     border-radius: 32px;
+    height: 32px;
+    margin: 2px;
+    width: 32px;
   }
 }

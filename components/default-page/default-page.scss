@@ -1,3 +1,9 @@
+@import "../../shared/styles/mixins";
+
 .default-page {
-  padding: 80px 30px 50px
+  padding: 74px 16px 24px;
+
+  @include desktop {
+    padding: 70px;
+  }
 }
