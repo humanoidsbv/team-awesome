@@ -1,3 +1,5 @@
+// sass-lint:disable no-vendor-prefixes
+
 @import "mixins";
 
 html {
@@ -8,15 +10,15 @@ html {
 }
 
 body {
+  @include tablet {
+    font-size: $default-font-size;
+  }
+
   font-family: $font-primary;
   font-size: $default-font-size--mobile;
   font-weight: $font-weight-book;
   letter-spacing: .5px;
   width: 100%;
-
-  @include tablet {
-    font-size: $default-font-size;
-  }
 }
 
 input {
@@ -49,8 +51,8 @@ p {
 }
 
 button {
-  cursor: pointer;
   border: none;
+  cursor: pointer;
   font-family: $font-primary;
   font-weight: $font-weight-bold;
 }

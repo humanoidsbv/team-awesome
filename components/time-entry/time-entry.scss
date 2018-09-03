@@ -1,11 +1,11 @@
-@import "../../shared/styles/_variables";
+@import "../../shared/styles/variables";
 
 .time-entry {
   align-items: center;
+  border: 1px solid $color-monochrome-2;
   border-bottom-left-radius: 0;
   border-left: 4px solid $color-primary;
   border-radius: 4px;
-  border: 1px solid $color-monochrome-2;
   color: $color-monochrome-4;
   display: flex;
   font-size: 16px;
