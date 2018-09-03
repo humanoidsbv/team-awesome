@@ -1,11 +1,12 @@
 @import "../../shared/styles/mixins";
+@import "../../shared/styles/variables";
 
 .profile-button {
   display: none;
 
   &::after {
-    background: url(/static/icons/arrow-down.svg) center center no-repeat;
-    content: '';
+    background: url("/static/icons/arrow-down.svg") center center no-repeat;
+    content: "";
     display: block;
     height: 25px;
     width: 25px;
@@ -19,7 +20,7 @@
 
   &__badge {
     align-items: center;
-    background-color: white;
+    background-color: $color-monochrome-1;
     border-radius: 36px;
     display: flex;
   }

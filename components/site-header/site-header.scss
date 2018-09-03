@@ -1,13 +1,13 @@
 @import "../../shared/styles/mixins";
+@import "../../shared/styles/variables";
 
 $site-header-height: 50px;
 $site-header-height-desktop: 70px;
 
 .site-header {
-  background-color: #4f88ef;
-  color: #ffffff;
+  background-color: $color-primary;
+  color: $color-monochrome-1;
   display: block;
-  height: $site-header-height;
   height: $site-header-height;
   left: 0;
   overflow: hidden;
@@ -37,7 +37,7 @@ $site-header-height-desktop: 70px;
   }
 
   &__navigation-button {
-    background: url('/static/icons/hamburger.svg') center center no-repeat;
+    background: url("/static/icons/hamburger.svg") center center no-repeat;
     height: $site-header-height;
     position: absolute;
     right: 0;
@@ -61,7 +61,7 @@ $site-header-height-desktop: 70px;
     }
 
     .site-header__navigation-button--open {
-      background-image: url('/static/icons/close.svg');
+      background-image: url("/static/icons/close.svg");
     }
   }
 }
