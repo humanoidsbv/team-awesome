@@ -1,0 +1,18 @@
+{
+  "time-entries": [
+    {
+      "id": "1",
+      "activity": "Activiteit",
+      "client": "Naam",
+      "start": "ISO date",
+      "stop": "ISO date"
+    },
+    {
+      "activity": "Activiteit 2",
+      "client": "Naam 2",
+      "start": "ISO date",
+      "stop": "ISO date",
+      "id": "2LEwehE"
+    }
+  ]
+}
