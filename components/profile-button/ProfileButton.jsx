@@ -15,7 +15,7 @@ const ProfileButton = () => (
       <img
         className="profile-button__photo"
         src="/static/profile-photo-boris.png"
-        alt="Profile photo of Boris"
+        alt="Profile of Boris"
         width="32"
         height="32"
       />
