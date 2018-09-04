@@ -1,0 +1,67 @@
+@import "../../../shared/styles/mixins";
+@import "../../../shared/styles/variables";
+
+$site-header-height: 50px;
+$site-header-height-desktop: 70px;
+
+.site-header {
+  background-color: $color-primary;
+  color: $color-monochrome-1;
+  display: block;
+  height: $site-header-height;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: height .3s;
+
+  @include desktop {
+    align-items: center;
+    display: flex;
+    height: $site-header-height-desktop;
+    justify-content: space-between;
+    padding: 0 21px 0 12px;
+  }
+
+  &__title {
+    font-family: bello-script;
+    font-size: 26px;
+    height: $site-header-height;
+    line-height: $site-header-height;
+    text-align: center;
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__navigation-button {
+    background: url("/static/icons/hamburger.svg") center center no-repeat;
+    height: $site-header-height;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: $site-header-height;
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__navigation-button-label {
+    display: none;
+  }
+
+  &--open {
+    height: 100%;
+
+    @include desktop {
+      height: $site-header-height-desktop;
+    }
+
+    .site-header__navigation-button--open {
+      background-image: url("/static/icons/close.svg");
+    }
+  }
+}

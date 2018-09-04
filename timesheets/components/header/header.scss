@@ -1,0 +1,17 @@
+@import "../../../shared/styles/variables";
+
+.header {
+  align-items: center;
+  color: $color-monochrome-3;
+  display: flex;
+  font-size: 16px;
+  height: 48px;
+  justify-content: space-between;
+  margin-top: 16px;
+
+  &__date {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+}
