@@ -11,12 +11,9 @@ const Navigation = () => (
       </Link>
     </li>
     <li className="navigation__item">
-      <a
-        className="navigation__link"
-        href="/team-members"
-      >
-        Team members
-      </a>
+      <Link href="/team-members">
+        <a className="navigation__link">Team members</a>
+      </Link>
     </li>
     <li className="navigation__item">
       <a

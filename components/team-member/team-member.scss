@@ -1,0 +1,29 @@
+@import "../../shared/styles/variables";
+
+.team-member {
+  align-items: center;
+  border: 1px solid $color-monochrome-2;
+  border-bottom-left-radius: 0;
+  border-left: 4px solid $color-primary;
+  border-radius: 4px;
+  color: $color-monochrome-4;
+  display: flex;
+  font-size: 16px;
+  font-weight: $font-weight-bold;
+  height: 82px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 17px 15px 17px 12px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  &__job {
+    color: $color-monochrome-3;
+    font-size: 14px;
+  }
+}
