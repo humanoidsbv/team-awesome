@@ -13,13 +13,21 @@
   height: 82px;
   justify-content: space-between;
   margin-bottom: 20px;
-  padding: 17px 15px 17px 12px;
+  padding: 16px;
+
+  &__photo {
+    border-radius: 50px;
+    height: 50px;
+    margin-right: 25px;
+    width: 50px;
+  }
 
   &__info {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     height: 100%;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   &__job {
