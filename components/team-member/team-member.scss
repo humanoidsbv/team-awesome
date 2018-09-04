@@ -15,6 +15,14 @@
   margin-bottom: 20px;
   padding: 16px;
 
+  &::after {
+    background: url("/static/icons/diamond-down.svg") no-repeat center center;
+    content: "";
+    height: 16px;
+    margin-left: 25px;
+    width: 16px;
+  }
+
   &__photo {
     border-radius: 50px;
     height: 50px;
