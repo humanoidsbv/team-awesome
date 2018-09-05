@@ -1,13 +1,14 @@
 @import "../../../shared/styles/variables";
 
 .member {
-  border: 1px solid $color-monochrome-2;
+  border: 1px solid $color-gray-3;
   border-bottom-left-radius: 0;
   border-left: 4px solid $color-primary;
   border-radius: 4px;
-  color: $color-monochrome-4;
+  color: $color-gray-5;
   font-size: 16px;
   font-weight: $font-weight-bold;
+  margin-bottom: 20px;
   max-height: 82px;
   overflow: hidden;
   transition: .3s max-height;
@@ -53,17 +54,31 @@
     width: 50px;
   }
 
+  &__header {
+    background-color: $color-gray-2;
+    border-bottom: 1px solid $color-gray-3;
+    border-top: 1px solid $color-gray-3;
+    color: $color-gray-4;
+    font-size: 14px;
+    font-weight: $font-weight-bold;
+    padding: 10px 30px;
+  }
+
   &__info {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     height: 100%;
     justify-content: center;
-    margin: 16px;
+    margin: 16px 16px 0;
+
+    &:last-child {
+      margin-bottom: 16px;
+    }
   }
 
   &__label {
-    color: $color-monochrome-3;
+    color: $color-gray-4;
     font-size: 14px;
   }
 }

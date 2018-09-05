@@ -2,11 +2,11 @@
 
 .entry {
   align-items: center;
-  border: 1px solid $color-monochrome-2;
+  border: 1px solid $color-gray-3;
   border-bottom-left-radius: 0;
   border-left: 4px solid $color-primary;
   border-radius: 4px;
-  color: $color-monochrome-4;
+  color: $color-gray-5;
   display: flex;
   font-size: 16px;
   font-weight: $font-weight-bold;
@@ -28,7 +28,7 @@
   }
 
   &__duration {
-    color: $color-monochrome-3;
+    color: $color-gray-4;
     font-size: 14px;
   }
 }
