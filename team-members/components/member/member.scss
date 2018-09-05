@@ -8,31 +8,37 @@
   color: $color-monochrome-4;
   font-size: 16px;
   font-weight: $font-weight-bold;
-  height: 82px;
+  max-height: 82px;
   overflow: hidden;
-  position: relative;
+  transition: .3s max-height;
+
+  &--expanded {
+    max-height: 300px;
+  }
 
   &__primary {
     align-items: center;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
-    margin-right: 80px;
+    padding-right: 80px;
+    position: relative;
+
+    &::after {
+      background: url("/static/icons/diamond-down.svg") no-repeat center center;
+      content: "";
+      height: 16px;
+      position: absolute;
+      right: 17px;
+      top: 33px;
+      width: 16px;
+    }
   }
 
   &__secondary {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-
-  &::after {
-    background: url("/static/icons/diamond-down.svg") no-repeat center center;
-    content: "";
-    height: 16px;
-    position: absolute;
-    right: 17px;
-    top: 33px;
-    width: 16px;
   }
 
   &__photo {

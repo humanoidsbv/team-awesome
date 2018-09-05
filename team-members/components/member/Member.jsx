@@ -3,10 +3,24 @@ import React from 'react';
 import './member.scss';
 
 class TeamMember extends React.Component {
+  state = {
+    isExpanded: false
+  }
+
+  handleClick = () => this.setState(({ isExpanded }) => ({ isExpanded: !isExpanded }))
+
   render() {
     return (
-      <div className="member">
-        <div className="member__primary">
+      <div
+        className={`
+          member
+          member--${this.state.isExpanded ? 'expanded' : 'collapsed' }
+        `}
+      >
+        <div
+          className="member__primary"
+          onClick={() => this.handleClick()}
+        >
           <img
             className="member__photo"
             src="/static/profile-photo-boris.png"
