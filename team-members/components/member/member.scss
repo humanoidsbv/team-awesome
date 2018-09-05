@@ -31,7 +31,12 @@
       position: absolute;
       right: 17px;
       top: 33px;
+      transition: .3s transform;
       width: 16px;
+
+      .member--expanded & {
+        transform: rotate(180deg);
+      }
     }
   }
 
