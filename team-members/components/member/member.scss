@@ -1,32 +1,44 @@
 @import "../../../shared/styles/variables";
 
 .member {
-  align-items: center;
   border: 1px solid $color-monochrome-2;
   border-bottom-left-radius: 0;
   border-left: 4px solid $color-primary;
   border-radius: 4px;
   color: $color-monochrome-4;
-  display: flex;
   font-size: 16px;
   font-weight: $font-weight-bold;
   height: 82px;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  padding: 16px;
+  overflow: hidden;
+  position: relative;
+
+  &__primary {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80px;
+  }
+
+  &__secondary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   &::after {
     background: url("/static/icons/diamond-down.svg") no-repeat center center;
     content: "";
     height: 16px;
-    margin-left: 25px;
+    position: absolute;
+    right: 17px;
+    top: 33px;
     width: 16px;
   }
 
   &__photo {
     border-radius: 50px;
     height: 50px;
-    margin-right: 25px;
+    margin: 16px;
     width: 50px;
   }
 
@@ -36,9 +48,10 @@
     flex-grow: 1;
     height: 100%;
     justify-content: center;
+    margin: 16px;
   }
 
-  &__job {
+  &__label {
     color: $color-monochrome-3;
     font-size: 14px;
   }
