@@ -35,6 +35,10 @@ class TeamMember extends React.Component {
         </div>
         <div className="member__secondary">
           <div className="member__header">Detailed information about Boris</div>
+          <div className="member__info member__info--extra">
+            <div className="member__value">HUM_001</div>
+            <div className="member__label">Employee number</div>
+          </div>
           <div className="member__info">
             <div className="member__value">Humanoids</div>
             <div className="member__label">Current employer</div>
