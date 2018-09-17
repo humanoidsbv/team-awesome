@@ -15,6 +15,7 @@ $site-header-height-desktop: 70px;
   right: 0;
   top: 0;
   transition: height .3s;
+  z-index: 1;
 
   @include desktop {
     align-items: center;
