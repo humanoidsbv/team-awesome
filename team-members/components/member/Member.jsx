@@ -7,19 +7,29 @@ class TeamMember extends React.Component {
     isExpanded: false
   }
 
-  handleClick = () => this.setState(({ isExpanded }) => ({ isExpanded: !isExpanded }))
+  toggleDetail = () => this.setState(({ isExpanded }) => ({ isExpanded: !isExpanded }))
+
+  handleKeyUp = (event) => {
+    if (event.key === ' ' || event.key === 'Enter') {
+      event.preventDefault();
+      this.toggleDetail();
+    }
+  };
 
   render() {
     return (
       <div
         className={`
           member
-          member--${this.state.isExpanded ? 'expanded' : 'collapsed' }
+          member--${this.state.isExpanded ? 'expanded' : 'collapsed'}
         `}
       >
         <div
           className="member__primary"
-          onClick={() => this.handleClick()}
+          onClick={this.toggleDetail}
+          onKeyDown={this.handleKeyUp}
+          role="button"
+          tabIndex="0"
         >
           <img
             className="member__photo"
