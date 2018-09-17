@@ -1,0 +1,40 @@
+@import "../../../shared/styles/mixins";
+@import "../../../shared/styles/variables";
+
+.profile-button {
+  display: none;
+
+  &::after {
+    background: url("/static/icons/arrow-down.svg") center center no-repeat;
+    content: "";
+    display: block;
+    height: 25px;
+    width: 25px;
+  }
+
+  @include desktop {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+  }
+
+  &__badge {
+    align-items: center;
+    background-color: $color-gray-1;
+    border-radius: 36px;
+    display: flex;
+  }
+
+  &__logo {
+    height: 10px;
+    margin: 0 12px;
+    width: 75px;
+  }
+
+  &__photo {
+    border-radius: 32px;
+    height: 32px;
+    margin: 2px;
+    width: 32px;
+  }
+}

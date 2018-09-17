@@ -1,0 +1,16 @@
+@import "../../../shared/styles/variables";
+@import "../../../shared/styles/mixins";
+
+.overview {
+  &__title {
+    display: none;
+
+    @include desktop {
+      color: $color-gray-5;
+      display: block;
+      font-size: 24px;
+      font-weight: $font-weight-normal;
+      margin: 33px 25px 25px 0;
+    }
+  }
+}

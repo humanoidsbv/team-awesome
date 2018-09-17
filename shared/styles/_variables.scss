@@ -12,10 +12,11 @@ $font-weight-book: $font-weight-normal;
 /* colors */
 $color-primary: #4f88ef;
 $color-primary-active: #1166a5;
-$color-monochrome-1: #ffffff;
-$color-monochrome-2: #e6eaee;
-$color-monochrome-3: #7f8fa4;
-$color-monochrome-4: #354052;
+$color-gray-1: #ffffff;
+$color-gray-2: #f5f8fa;
+$color-gray-3: #e6eaee;
+$color-gray-4: #7f8fa4;
+$color-gray-5: #354052;
 
 /* colors not being used yet */
 $color-secondary: #372347;
@@ -25,8 +26,8 @@ $color-accent: #0092ff;
 
 $color-error: #f60000;
 
-$color-monochrome-6: #e4e7ee;
-$color-monochrome-5: #36333c;
+$color-gray-6: #e4e7ee;
+$color-gray-5: #36333c;
 
 $color-accent-alt-1: #f70;
 $color-accent-alt-2: #70c017;
@@ -34,8 +35,8 @@ $color-accent-alt-3: #009659;
 $color-accent-alt-4: #f05a28;
 
 /* color specific */
-$header-color-primary: $color-monochrome-5;
-$paragraph-color-primary: $color-monochrome-3;
+$header-color-primary: $color-gray-5;
+$paragraph-color-primary: $color-gray-3;
 
 /* media queries */
 $xs: (max-width: 599px);
